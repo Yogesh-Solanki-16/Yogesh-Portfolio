@@ -1,0 +1,27 @@
+/* General Styling */
+.theme-pattern {
+  width: 100px;
+  margin-top: -20px;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(267deg, #282c34 0.36%, #45a29e 102.06%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Progress Bar */
+.progress-bar {
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+/* Achievements Section */
+.achievement {
+  transition: transform 0.3s ease;
+}
+.achievement:hover {
+  transform: scale(1.05);
+}

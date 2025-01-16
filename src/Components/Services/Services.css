@@ -1,0 +1,174 @@
+/* General Container */
+.services {
+  background-color: #161513;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.services-title {
+  margin-bottom: 40px;
+}
+
+.services-title h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* Service Box Styling */
+.service-format {
+  background: #232223;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 350px;
+}
+
+.service-format:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.service-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.service-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.service-desc {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Read More Styling */
+.services-readmore {
+  margin-top: auto;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #45a29e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.services-readmore:hover {
+  color: #282c34;
+}
+
+.services-readmore img {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
+.services-readmore:hover img {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+  .services {
+    padding: 50px 15px;
+  }
+
+  .services-title h1 {
+    font-size: 2rem;
+  }
+
+  .service-format {
+    min-height: 320px;
+    padding: 25px;
+  }
+
+  .service-number {
+    font-size: 2.5rem;
+  }
+
+  .service-name {
+    font-size: 1.25rem;
+  }
+
+  .service-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .services-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-format {
+    min-height: 300px;
+    padding: 20px;
+  }
+
+  .service-number {
+    font-size: 2.2rem;
+  }
+
+  .service-name {
+    font-size: 1.2rem;
+  }
+
+  .service-desc {
+    font-size: 0.85rem;
+  }
+
+  .services-readmore {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (Small Phones) */
+@media (max-width: 576px) {
+  .services {
+    padding: 40px 10px;
+  }
+
+  .services-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .service-format {
+    min-height: 280px;
+    padding: 15px;
+  }
+
+  .service-number {
+    font-size: 2rem;
+  }
+
+  .service-name {
+    font-size: 1rem;
+  }
+
+  .service-desc {
+    font-size: 0.8rem;
+  }
+
+  .services-readmore {
+    font-size: 0.85rem;
+    gap: 5px;
+  }
+
+  .services-readmore img {
+    width: 12px;
+    height: 12px;
+  }
+}
