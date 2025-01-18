@@ -19,7 +19,7 @@ const Work = () => {
               data-aos-duration="1000"
               key={index}
               src={work.w_img}
-              alt={`Work ${index + 1}`}
+              
               className="work-image"
             />
           ))}

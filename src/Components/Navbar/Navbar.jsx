@@ -59,13 +59,6 @@ const Navbar = () => {
               </AnchorLink>
             </li>
           </ul>
-
-          {/* Connect Button */}
-          {/* <div className="d-lg-block mt-3 mt-lg-0 text-center">
-            <AnchorLink href="#contact" className="btn btn-gradient px-4 py-2">
-              Connect With Me
-            </AnchorLink>
-          </div> */}
         </div>
       </div>
     </nav>
