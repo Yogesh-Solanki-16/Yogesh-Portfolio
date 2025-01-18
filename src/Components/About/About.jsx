@@ -11,12 +11,11 @@ const About = () => {
 
       {/* About Section */}
       <div className="row align-items-center mb-5">
-        {/* Left Section */}
 
         {/* Right Section */}
         <div className="col-md-12" data-aos="fade-up" data-aos-duration="1000">
           <div className="mb-4">
-            <p className="">
+            <p>
               Hi, I’m Yogesh Solanki, a passionate Frontend Developer
               specializing in React.js. With 1 year of experience, I bring
               designs to life by building responsive, user-friendly, and
@@ -24,7 +23,7 @@ const About = () => {
               digital experiences that are not only visually appealing but also
               highly functional.
             </p>
-            <p className="">
+            <p>
               I completed my graduation at A.R. Bhatt College under BKNMU
               University, Junagadh, where I gained a strong foundation in web
               development and programming principles.
@@ -37,11 +36,11 @@ const About = () => {
             <div className="row g-3">
               {[
                 { skill: "HTML & CSS", level: "90%" },
-                { skill: "JavaScript", level: "70%" },
-                { skill: "Bootstrap", level: "60%" },
-                { skill: "jQuery", level: "70%" },
+                { skill: "JavaScript", level: "80%" },
+                { skill: "Bootstrap", level: "70%" },
+                { skill: "jQuery", level: "80%" },
                 { skill: "React.js", level: "90%" },
-                { skill: "Redux", level: "75%" },
+                { skill: "Redux", level: "85%" },
               ].map(({ skill, level }, index) => (
                 <div className="col-6" key={index}>
                   <p className="mb-2 fw-semibold">{skill}</p>
@@ -70,8 +69,8 @@ const About = () => {
         data-aos-duration="1000"
       >
         {[
-          { value: "10+", label: "YEARS OF EXPERIENCE" },
-          { value: "99+", label: "PROJECTS COMPLETED" },
+          { value: "3+", label: "YEARS OF EXPERIENCE" },
+          { value: "16+", label: "PROJECTS COMPLETED" },
           { value: "50+", label: "HAPPY CLIENTS" },
         ].map(({ value, label }, index) => (
           <div className="col-12 col-md-4" key={index}>
@@ -85,5 +84,4 @@ const About = () => {
     </div>
   );
 };
-
 export default About;

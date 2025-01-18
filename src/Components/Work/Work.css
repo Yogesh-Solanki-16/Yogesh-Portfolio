@@ -46,26 +46,19 @@
   height: auto;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s;
   cursor: pointer;
 }
 
-.mywork-container img:hover {
-  transform: scale(1.05);
-  /* border: 3px solid #ff00ff; */
-  transition: 0.3s ease;
-}
 
 /* Show More Button */
 .mywork-showmore {
   background: linear-gradient(267deg, #282c34 0.36%, #45a29e 102.06%);
-
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 20px 40px;
+  padding: 15px 30px;
   border-radius: 30px;
-  /* border: 1px solid white; */
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
@@ -73,8 +66,11 @@
 }
 
 .mywork-showmore:hover {
-  transition: 0.6s;
-  gap: 30px;
+  transform: scale(1.1);
+}
+
+.mywork-showmore img:hover {
+  transition:  0.3s ease;
 }
 
 /* Responsive Design */
@@ -109,6 +105,10 @@
   .mywork-showmore {
     font-size: 0.9rem;
     padding: 10px 20px;
+  }
+  .mywork-showmore img{
+    width: 20px;
+    margin-left: 10px
   }
 }
 

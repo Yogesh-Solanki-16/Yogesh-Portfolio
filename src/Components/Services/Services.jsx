@@ -24,7 +24,7 @@ const Services = () => {
                 <h3 className="service-number gradient-text">{service.s_no}</h3>
                 <h2 className="service-name">{service.s_name}</h2>
                 <p className="service-desc">{service.s_desc}</p>
-                <div className="services-readmore d-flex align-items-center">
+                <div className="services-readmore d-flex align-items-center ">
                   <p className="mb-0">Read More</p>
                   <img src={arrow_icon} alt="Arrow Icon" />
                 </div>

@@ -32,7 +32,7 @@ const Hero = () => {
             <br />
             <span className="fs-3">Frontend Developer From Gujarat</span>
           </h1>
-          <p className="">
+          <p>
             As a frontend developer with 1 year of hands-on experience, I
             specialize in creating responsive, user-friendly web applications
             using technologies like HTML, CSS, JavaScript, and React.
@@ -44,7 +44,7 @@ const Hero = () => {
               href="#contact"
               className="btn btn-primary btn-lg px-5 py-3"
             >
-              Connect With Me
+              Contact Me
             </AnchorLink>
             <a
               href={pdf}
@@ -59,5 +59,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;

@@ -85,6 +85,7 @@
 }
 
 .contact-detail img {
+  margin-bottom: 10px;
   width: 30px;
   text-align: center;
   align-items: center;
@@ -101,10 +102,12 @@
   color: #d8d8d8;
   font-size: 1rem;
   font-weight: 500;
+  margin-bottom: 5px;
 }
-
+  
 .contact-right input,
 .contact-right textarea {
+  margin-bottom: 20px;
   width: 100%;
   border: none;
   padding: 15px;
@@ -112,6 +115,9 @@
   background: #32323c;
   color: #a0a0a0;
   font-size: 1rem;
+}
+.text-red-500{
+  color: #45a29e;
 }
 
 .contact-submit {
@@ -124,7 +130,7 @@
   font-size: 1rem;
   padding: 15px 30px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: ease 0.3s;
   font-weight: 500;
 }
 

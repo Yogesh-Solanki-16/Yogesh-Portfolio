@@ -30,73 +30,89 @@ const Contact = () => {
   };
 
   return (
-    <div className="container">
-      <div id="contact" className="contact">
-        {/* Title Section */}
-        <div className="contact-title">
-          <h1>Get in Touch</h1>
-          {/* <img src={theme_pattern} alt="Pattern" /> */}
-        </div>
-
-        {/* Contact Section */}
-        <div className="contact-section" >
-          {/* Left Section */}
-          <div className="contact-left" data-aos="fade-up-right" 
-          data-aos-duration="1000"> 
-            <h1 className="gradient-text">Let’s Talk</h1>
-            <p>
-              I’m currently available to take a new project, so feel free to
-              send me a message about anything you want me to work on. Contact
-              me anytime.
-            </p>
-            
-            <div className="contact-details" >
-              <div className="contact-detail">
-                <img src={mail_icon} alt="Mail Icon" />
-                <p>yogeshsolanki1016@gmail.com</p>
-              </div>
-              <div className="contact-detail">
-                <img src={call_icon} alt="Call Icon" />
-                <p>+91 9313-604-818</p>
-              </div>
-              <div className="contact-detail">
-                <img src={location_icon} alt="Location Icon" />
-                <p>Gujarat, India</p>
-              </div>
-            </div>
+    <>
+      <div className="container">
+        <div id="contact" className="contact">
+          {/* Title Section */}
+          <div className="contact-title">
+            <h1>Get in Touch</h1>
           </div>
 
-          {/* Right Section (Form) */}
-          <form onSubmit={onSubmit} action="" className="contact-right"  data-aos="zoom-in"
-          data-aos-duration="1000">
-            <label htmlFor="name">Your Name</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
-            <label htmlFor="email">Your Email</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-            <label htmlFor="message">Write Your Message Here</label>
-            <textarea
-              name="message"
-              rows="8"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-            <button type="submit" className="contact-submit">
-              Submit Now
-            </button>
-          </form>
+          {/* Contact Section */}
+          <div className="contact-section">
+            {/* Left Section */}
+            <div
+              className="contact-left"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <h1 className="gradient-text">Let’s Talk</h1>
+              <p>
+                I’m currently available to take a new project, so feel free to
+                send me a message about anything you want me to work on. Contact
+                me anytime.
+              </p>
+
+              <div className="contact-details">
+                <div className="contact-detail">
+                  <img src={mail_icon} alt="Mail Icon" />
+                  <p>yogeshsolanki1016@gmail.com</p>
+                </div>
+                <div className="contact-detail">
+                  <img src={call_icon} alt="Call Icon" />
+                  <p>+91 9313-604-818</p>
+                </div>
+                <div className="contact-detail">
+                  <img src={location_icon} alt="Location Icon" />
+                  <p>Gujarat, India</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Section (Form) */}
+            <form
+              onSubmit={onSubmit}
+              action=""
+              className="contact-right"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <label htmlFor="name">
+                Your Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              <label htmlFor="email">
+                Your Email <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <label htmlFor="message">
+                Write Your Message Here<span className="text-red-500">*</span>
+              </label>
+              <textarea
+                name="message"
+                rows="8"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+              <button type="submit" className="contact-submit">
+                Submit Now
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+     
+    </>
   );
 };
 

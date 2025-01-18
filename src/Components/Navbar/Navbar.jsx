@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container-fluid">
         {/* Brand Section */}
         <a className="navbar-brand d-flex align-items-center" href="#home">
-          <h1 className="m-0">BadshahCoding</h1>
+          <h1 className="m-0">CodeWithBadshah</h1>
         </a>
 
         {/* Hamburger Icon for Mobile */}
@@ -61,11 +61,11 @@ const Navbar = () => {
           </ul>
 
           {/* Connect Button */}
-          <div className="d-lg-block mt-3 mt-lg-0 text-center">
+          {/* <div className="d-lg-block mt-3 mt-lg-0 text-center">
             <AnchorLink href="#contact" className="btn btn-gradient px-4 py-2">
               Connect With Me
             </AnchorLink>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

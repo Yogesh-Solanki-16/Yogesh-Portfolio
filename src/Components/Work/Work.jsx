@@ -8,7 +8,7 @@ const Work = () => {
       <div id="work" className="mywork">
         {/* Title Section */}
         <div className="mywork-title text-center">
-          <h1>My Latest Work</h1>
+          <h1>My Project</h1>
         </div>
 
         {/* Work Items Grid */}
@@ -28,7 +28,6 @@ const Work = () => {
         {/* Show More Button */}
         <div className="mywork-showmore">
           <a>
-            {" "}
             <span>Show More</span> <img src={arrow_icon} alt="Arrow Icon" />
           </a>
         </div>
@@ -36,5 +35,4 @@ const Work = () => {
     </div>
   );
 };
-
 export default Work;
