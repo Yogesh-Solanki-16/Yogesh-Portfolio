@@ -6,12 +6,10 @@ const Work = () => {
   return (
     <div className="container">
       <div id="work" className="mywork">
-        {/* Title Section */}
         <div className="mywork-title text-center">
           <h1>My Project</h1>
         </div>
 
-        {/* Work Items Grid */}
         <div className="mywork-container">
           {mywork_data.map((work, index) => (
             <img
@@ -19,13 +17,11 @@ const Work = () => {
               data-aos-duration="1000"
               key={index}
               src={work.w_img}
-              
               className="work-image"
             />
           ))}
         </div>
 
-        {/* Show More Button */}
         <div className="mywork-showmore">
           <a>
             <span>Show More</span> <img src={arrow_icon} alt="Arrow Icon" />

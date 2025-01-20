@@ -170,6 +170,8 @@
   }
 
   .services-readmore img {
+    display: block;
+    flex-direction: row;
     width: 12px;
     height: 12px;
   }

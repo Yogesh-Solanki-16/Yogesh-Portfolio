@@ -10,12 +10,10 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
-        {/* Brand Section */}
-        <a className="navbar-brand d-flex align-items-center" href="#home">
+        <a className="navbar-brand  align-items-center" href="#home">
           <h1 className="m-0">CodeWithBadshah</h1>
         </a>
 
-        {/* Hamburger Icon for Mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -23,11 +21,11 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded={menuOpen}
           aria-label="Toggle navigation"
+          style={{ fontSize: "0.7rem" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible Menu */}
         <div
           className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
           id="navbarNav"

@@ -7,7 +7,6 @@ const Services = () => {
   return (
     <div id="services" className="container py-5">
       <div className="services">
-        {/* Title Section */}
         <div className="services-title text-center mb-5">
           <h1 className="display-4 fw-bold">My Services</h1>
         </div>

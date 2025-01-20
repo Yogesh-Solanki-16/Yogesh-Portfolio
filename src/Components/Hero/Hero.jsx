@@ -9,7 +9,6 @@ const Hero = () => {
   return (
     <div id="home" className="hero container-fluid text-center">
       <div className="row align-items-center">
-        {/* Profile Image */}
         <div className="col-12 col-md-4 text-center mb-4 mb-md-0">
           <img
             src={grey_logo}
@@ -18,7 +17,6 @@ const Hero = () => {
           />
         </div>
 
-        {/* Hero Content */}
         <div className="col-12 col-md-8 text-center text-md-start">
           <h1 className="display-4 fw-bold">
             <span className="gradient-text type-name">
@@ -38,7 +36,6 @@ const Hero = () => {
             using technologies like HTML, CSS, JavaScript, and React.
           </p>
 
-          {/* Call-to-Actions */}
           <div className="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 mt-4">
             <AnchorLink
               href="#contact"

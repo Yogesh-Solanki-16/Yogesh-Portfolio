@@ -4,15 +4,13 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
-import './Footer.css';
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer bg-dark text-light py-5">
       <div className="container">
-        {/* Footer Top Section */}
         <div className="row gy-4 align-items-center">
-          {/* Left Section */}
           <div className="col-lg-6 text-center text-lg-start">
             <h3 className="mb-3">CodeWithBadshah</h3>
             <p className="mb-0">
@@ -20,7 +18,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right Section - Social Links */}
           <div className="col-lg-6 text-center text-lg-end">
             <h5 className=" m-4">Follow Me</h5>
             <div className="d-flex justify-content-center justify-content-lg-end gap-3 social">
@@ -64,14 +61,15 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom Section */}
         <div className="row mt-4 pt-4 border-top">
           <div className="col-lg-6 text-center text-lg-start ">
-            <p className="mb-0">© 2025 Yogesh Solanki. All Rights Reserved.</p>
+            <p className="mb-0 copyright">
+              © 2025 Yogesh Solanki. All Rights Reserved.
+            </p>
           </div>
           <div className="col-lg-6 d-flex justify-content-center justify-content-lg-end gap-3 text-center  bottom-footer">
-            <a href="#" className=" cursor-pointer ">
-              Terms of Service
+            <a href="#" className=" cursor-pointer footer-term">
+              Terms & Conditions
             </a>
             <a href="#" className=" cursor-pointer">
               Privacy Policy

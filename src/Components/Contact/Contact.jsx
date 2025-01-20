@@ -1,11 +1,17 @@
 import React from "react";
 import "./Contact.css";
-import theme_pattern from "../../assets/theme_pattern.svg";
+import { useState } from "react";
 import mail_icon from "../../assets/mail_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -24,8 +30,22 @@ const Contact = () => {
       body: json,
     }).then((res) => res.json());
 
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+
     if (res.success) {
-      alert(res.message);
+      toast.success("Email sent successfully !", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     }
   };
 
@@ -33,14 +53,11 @@ const Contact = () => {
     <>
       <div className="container">
         <div id="contact" className="contact">
-          {/* Title Section */}
           <div className="contact-title">
             <h1>Get in Touch</h1>
           </div>
 
-          {/* Contact Section */}
           <div className="contact-section">
-            {/* Left Section */}
             <div
               className="contact-left"
               data-aos="fade-up-right"
@@ -69,10 +86,8 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Right Section (Form) */}
             <form
               onSubmit={onSubmit}
-              action=""
               className="contact-right"
               data-aos="zoom-in"
               data-aos-duration="1000"
@@ -83,35 +98,56 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
                 required
               />
+
               <label htmlFor="email">
                 Your Email <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 required
               />
+
+              <label htmlFor="phone">
+                Your Phone <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="phone"
+                name="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="Enter your phone"
+                required
+              />
+
               <label htmlFor="message">
                 Write Your Message Here<span className="text-red-500">*</span>
               </label>
               <textarea
                 name="message"
                 rows="8"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="Enter your message"
                 required
               ></textarea>
+
               <button type="submit" className="contact-submit">
                 Submit Now
               </button>
             </form>
           </div>
         </div>
+        <ToastContainer />
       </div>
-     
     </>
   );
 };

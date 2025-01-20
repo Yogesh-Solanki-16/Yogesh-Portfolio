@@ -5,13 +5,10 @@ const About = () => {
   return (
     <div className="container" id="about">
       <div className="text-center">
-        {/* Title Section */}
         <h1 className="display-4 fw-bold mb-4">About Me</h1>
       </div>
 
-      {/* About Section */}
       <div className="row align-items-center mb-5">
-
         {/* Right Section */}
         <div className="col-md-12" data-aos="fade-up" data-aos-duration="1000">
           <div className="mb-4">
